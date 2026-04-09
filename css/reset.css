@@ -1,0 +1,165 @@
+/* ========================================================================== */
+/* Reset.css — modern, practical reset                                         */
+/* ========================================================================== */
+
+/* 1) Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2) Remove default margin */
+* {
+    margin: 0;
+}
+
+/* 3) Improve text rendering */
+html {
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape on iOS */
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Make rems predictable (optional; keep if you like 10px = 1rem) */
+    /* font-size: 62.5%; */
+}
+
+/* 4) Set core body defaults */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+}
+
+/* 5) Media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6) Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+}
+
+/* 7) Buttons: remove default styles (keep pointer + usability) */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+
+/* 8) Prevent textarea from only resizing horizontally by default */
+textarea {
+    resize: vertical;
+}
+
+/* 9) Remove built-in typography styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* 10) Lists: remove default styles */
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* 11) Links: keep accessible defaults but remove decoration */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 12) Tables: consistent layout */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 13) Make sure hidden works consistently */
+[hidden] {
+    display: none !important;
+}
+
+/* 14) Better default for hr */
+hr {
+    border: 0;
+    border-top: 1px solid currentColor;
+    opacity: 0.2;
+}
+
+/* 15) Remove default fieldset styles */
+fieldset {
+    border: 0;
+    min-width: 0;
+}
+
+/* 16) Improve focus outlines (keyboard users) */
+:focus {
+    outline: none;
+}
+:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+/* 17) Prevent tap highlight on mobile (optional) */
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 18) Better word wrapping */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 19) Avoid text overflow for long strings in common containers */
+body,
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* 20) Reduced motion: respect user preferences */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

@@ -1,0 +1,20 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.btn {
+    padding: 14px 16px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #0a84ff 0%, #1e3a8a 100%);
+    box-shadow: 0 4px 15px rgba(10, 132, 255, 0.3);
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+}
