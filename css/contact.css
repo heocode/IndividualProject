@@ -1,0 +1,259 @@
+/* ── Contact page ── */
+
+.contact {
+    padding: 60px 0 80px;
+}
+
+.contact .container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.contact__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+/* ── Left column ── */
+
+.contact__info-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.contact__info-subtitle {
+    font-size: 17px;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 36px;
+}
+
+/* Detail list */
+
+.contact__details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 36px;
+}
+
+.contact__detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.contact__detail-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: #eff6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__detail-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.contact__detail-label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #374151;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.contact__detail-value {
+    font-size: 17px;
+    color: #4b5563;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+a.contact__detail-value:hover {
+    color: #1e40af;
+}
+
+/* Why Heocode card */
+
+.contact__why {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px 28px;
+}
+
+.contact__why-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 16px;
+}
+
+.contact__why-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact__why-list li {
+    font-size: 16px;
+    color: #4b5563;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.contact__why-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #1e40af;
+}
+
+/* ── Right column — form ── */
+
+.contact__form-wrap {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 40px 36px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+.contact__form-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 28px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact__label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.contact__required {
+    color: #ef4444;
+}
+
+.contact__input,
+.contact__select,
+.contact__textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    color: #111827;
+    background: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
+}
+
+.contact__input::placeholder,
+.contact__textarea::placeholder {
+    color: #9ca3af;
+}
+
+.contact__input:focus,
+.contact__select:focus,
+.contact__textarea:focus {
+    border-color: #1e40af;
+    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.12);
+}
+
+/* Select wrapper for custom arrow */
+
+.contact__select-wrap {
+    position: relative;
+}
+
+.contact__select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.contact__select option[value=""][disabled] {
+    color: #9ca3af;
+}
+
+.contact__select-arrow {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Textarea */
+
+.contact__textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Submit */
+
+.contact__submit {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 992px) {
+    .contact__grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact__form-wrap {
+        padding: 28px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact__info-title {
+        font-size: 26px;
+    }
+
+    .contact__form-title {
+        font-size: 20px;
+    }
+}

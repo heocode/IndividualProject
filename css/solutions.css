@@ -1,0 +1,258 @@
+.solutions {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.solutions .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 48px 0;
+}
+
+.solutions__header {
+    text-align: center;
+    max-width: 660px;
+}
+
+.solutions__title {
+    font-size: 52px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 14px;
+}
+
+.solutions__subtitle {
+    font-size: 20px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.solutions__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    width: 100%;
+}
+
+/* Card */
+.sol-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.sol-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.sol-card__banner {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.sol-card__banner--blue {
+    background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+}
+
+.sol-card__banner--green {
+    background: linear-gradient(135deg, #34d399 0%, #059669 100%);
+}
+
+.sol-card__banner--purple {
+    background: linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%);
+}
+
+.sol-card__body {
+    padding: 28px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.sol-card__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.sol-card__desc {
+    font-size: 17px;
+    color: #64748b;
+    line-height: 1.65;
+}
+
+.sol-card__features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sol-card__features-label {
+    font-size: 17px;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.sol-card__list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-left: 4px;
+}
+
+.sol-card__list li {
+    font-size: 16px;
+    color: #475569;
+    padding-left: 20px;
+    position: relative;
+}
+
+.sol-card__list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #1e40af;
+    font-size: 13px;
+    top: 2px;
+}
+
+.sol-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #1e40af;
+    margin-top: auto;
+    transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.sol-card__link:hover {
+    color: #0a84ff;
+    gap: 10px;
+}
+
+/* Custom solution CTA */
+.sol-cta {
+    background-color: #f1f5f9;
+    padding: 80px 0;
+}
+
+.sol-cta .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.sol-cta__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.15;
+}
+
+.sol-cta__subtitle {
+    font-size: 20px;
+    color: #475569;
+    line-height: 1.6;
+    max-width: 640px;
+}
+
+.sol-cta__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+    font-size: 19px;
+    padding: 18px 36px;
+    border-radius: 16px;
+}
+
+.sol-cta__btn img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .solutions .container {
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .solutions__title {
+        font-size: 36px;
+    }
+
+    .solutions__subtitle {
+        font-size: 17px;
+    }
+
+    .solutions__grid {
+        gap: 16px;
+    }
+
+    .sol-card__banner {
+        height: 64px;
+    }
+
+    .sol-card__body {
+        padding: 16px;
+        gap: 8px;
+    }
+
+    .sol-card__title {
+        font-size: 19px;
+    }
+
+    .sol-card__desc,
+    .sol-card__features-label,
+    .sol-card__link {
+        font-size: 15px;
+    }
+
+    .sol-card__list li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .solutions__grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .solutions {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .solutions__title {
+        font-size: 28px;
+    }
+
+    .solutions__subtitle {
+        font-size: 16px;
+    }
+
+    .solutions__grid {
+        max-width: none;
+    }
+}

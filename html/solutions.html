@@ -7,7 +7,7 @@
         <title>Heocode</title>
         <link rel="stylesheet" href="../css/reset.css" />
         <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="../css/home.css" />
+        <link rel="stylesheet" href="../css/solutions.css" />
         <link rel="stylesheet" href="../css/modal.css" />
         <link rel="stylesheet" href="../css/header.css" />
         <link rel="stylesheet" href="../css/footer.css" />
@@ -32,15 +32,21 @@
                 <nav class="nav" id="nav">
                     <ul class="menu">
                         <li class="menu__item">
-                            <a href="#" class="menu__item-link">Home</a>
+                            <a href="../html/index.html" class="menu__item-link"
+                                >Home</a
+                            >
                         </li>
                         <li class="menu__item">
-                            <a href="./solutions.html" class="menu__item-link"
+                            <a
+                                href="../html/solutions.html"
+                                class="menu__item-link menu__item-link--active"
                                 >Solutions</a
                             >
                         </li>
                         <li class="menu__item">
-                            <a href="./projects.html" class="menu__item-link"
+                            <a
+                                href="../html/projects.html"
+                                class="menu__item-link"
                                 >Projects</a
                             >
                         </li>
@@ -59,252 +65,272 @@
             </div>
         </header>
         <main>
-            <section class="hero">
+            <section class="solutions">
                 <div class="container">
-                    <div class="hero__content">
-                        <h1 class="hero__title">
-                            Building Intelligent Software Solutions
-                        </h1>
-                        <p class="hero__description">
-                            We transform your ideas into powerful, scalable
-                            applications that drive business growth and digital
-                            innovation.
+                    <div class="solutions__header">
+                        <h1 class="solutions__title">Our Solutions</h1>
+                        <p class="solutions__subtitle">
+                            Discover our suite of powerful software solutions
+                            designed to solve real business challenges and drive
+                            growth.
                         </p>
-                        <div class="hero__buttons">
-                            <button
-                                id="open-contact-modal"
-                                class="btn hero__btn--primary"
-                            >
-                                Start Your Project
-                                <img src="../images/arrow-right.svg" alt="" />
-                            </button>
-                            <a href="./solutions.html" class="btn btn--outline"
-                                >View Solutions</a
-                            >
-                        </div>
                     </div>
-                    <div class="hero__visual">
-                        <img
-                            class="hero__image"
-                            src="https://images.unsplash.com/photo-1765561667528-28e39c6174dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzb2Z0d2FyZSUyMGRldmVsb3BtZW50JTIwdGVhbSUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3NzU2MjYwNTN8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                            alt="Software development team"
-                        />
-                        <div class="hero__badge">
-                            <svg
-                                class="hero__badge-icon"
-                                width="28"
-                                height="28"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
+                    <div class="solutions__grid">
+                        <!-- Card 1: Analytics Platform -->
+                        <div class="sol-card">
+                            <div
+                                class="sol-card__banner sol-card__banner--blue"
                             >
-                                <path
-                                    d="M12 2L4 5.5V11C4 15.55 7.84 19.74 12 21C16.16 19.74 20 15.55 20 11V5.5L12 2Z"
-                                    fill="#0a84ff"
-                                />
-                                <path
-                                    d="M10 14.5L7.5 12L8.91 10.59L10 11.67L13.59 8.08L15 9.5L10 14.5Z"
-                                    fill="white"
-                                />
-                            </svg>
-                            <div class="hero__badge-stats">
-                                <span class="hero__badge-number">100+</span>
-                                <span class="hero__badge-label"
-                                    >Projects Delivered</span
+                                <svg
+                                    width="40"
+                                    height="40"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
                                 >
+                                    <rect
+                                        x="3"
+                                        y="12"
+                                        width="4"
+                                        height="9"
+                                        rx="1"
+                                        fill="white"
+                                    />
+                                    <rect
+                                        x="10"
+                                        y="7"
+                                        width="4"
+                                        height="14"
+                                        rx="1"
+                                        fill="white"
+                                    />
+                                    <rect
+                                        x="17"
+                                        y="3"
+                                        width="4"
+                                        height="18"
+                                        rx="1"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="sol-card__body">
+                                <h2 class="sol-card__title">
+                                    Analytics Platform
+                                </h2>
+                                <p class="sol-card__desc">
+                                    Transform your data into actionable insights
+                                    with our advanced analytics platform.
+                                    Real-time dashboards, predictive analytics,
+                                    and comprehensive reporting tools help you
+                                    make informed decisions faster.
+                                </p>
+                                <div class="sol-card__features">
+                                    <p class="sol-card__features-label">
+                                        Key Features:
+                                    </p>
+                                    <ul class="sol-card__list">
+                                        <li>Real-time Data Processing</li>
+                                        <li>Custom Dashboards</li>
+                                        <li>Predictive Analytics</li>
+                                        <li>Advanced Reporting</li>
+                                    </ul>
+                                </div>
+                                <a
+                                    href="./projects.html"
+                                    class="sol-card__link"
+                                >
+                                    Learn more
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M5 12H19M19 12L13 6M19 12L13 18"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Mobile Health App -->
+                        <div class="sol-card">
+                            <div
+                                class="sol-card__banner sol-card__banner--green"
+                            >
+                                <svg
+                                    width="40"
+                                    height="40"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <rect
+                                        x="7"
+                                        y="2"
+                                        width="10"
+                                        height="20"
+                                        rx="2"
+                                        stroke="white"
+                                        stroke-width="2"
+                                    />
+                                    <line
+                                        x1="10"
+                                        y1="18"
+                                        x2="14"
+                                        y2="18"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="sol-card__body">
+                                <h2 class="sol-card__title">
+                                    Mobile Health App
+                                </h2>
+                                <p class="sol-card__desc">
+                                    Empower your users with a comprehensive
+                                    health and wellness mobile application.
+                                    Track fitness goals, monitor health metrics,
+                                    and connect with healthcare professionals
+                                    all in one place.
+                                </p>
+                                <div class="sol-card__features">
+                                    <p class="sol-card__features-label">
+                                        Key Features:
+                                    </p>
+                                    <ul class="sol-card__list">
+                                        <li>Health Tracking</li>
+                                        <li>Appointment Scheduling</li>
+                                        <li>Telemedicine Integration</li>
+                                        <li>Personalized Insights</li>
+                                    </ul>
+                                </div>
+                                <a
+                                    href="./projects.html"
+                                    class="sol-card__link"
+                                >
+                                    Learn more
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M5 12H19M19 12L13 6M19 12L13 18"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: E-Commerce Suite -->
+                        <div class="sol-card">
+                            <div
+                                class="sol-card__banner sol-card__banner--purple"
+                            >
+                                <svg
+                                    width="40"
+                                    height="40"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M6 2L3 6V20C3 21.1 3.9 22 5 22H19C20.1 22 21 21.1 21 20V6L18 2H6Z"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linejoin="round"
+                                    />
+                                    <line
+                                        x1="3"
+                                        y1="6"
+                                        x2="21"
+                                        y2="6"
+                                        stroke="white"
+                                        stroke-width="2"
+                                    />
+                                    <path
+                                        d="M16 10C16 12.2 14.2 14 12 14C9.8 14 8 12.2 8 10"
+                                        stroke="white"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="sol-card__body">
+                                <h2 class="sol-card__title">
+                                    E-Commerce Suite
+                                </h2>
+                                <p class="sol-card__desc">
+                                    Launch and scale your online business with
+                                    our complete e-commerce solution. From
+                                    product management to payment processing and
+                                    order fulfillment, we've got you covered.
+                                </p>
+                                <div class="sol-card__features">
+                                    <p class="sol-card__features-label">
+                                        Key Features:
+                                    </p>
+                                    <ul class="sol-card__list">
+                                        <li>Product Catalog Management</li>
+                                        <li>Secure Payments</li>
+                                        <li>Inventory Tracking</li>
+                                        <li>Customer Analytics</li>
+                                    </ul>
+                                </div>
+                                <a
+                                    href="./projects.html"
+                                    class="sol-card__link"
+                                >
+                                    Learn more
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M5 12H19M19 12L13 6M19 12L13 18"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <section class="about">
+        <section class="sol-cta">
             <div class="container">
-                <h2 class="about__title">Who We Are</h2>
-                <p class="about__text">
-                    Heocode is a leading software development company
-                    specializing in creating cutting-edge digital solutions for
-                    businesses of all sizes. With our team of experienced
-                    developers and designers, we bring your vision to life
-                    through innovative technology and strategic thinking.
+                <h2 class="sol-cta__title">Need a Custom Solution?</h2>
+                <p class="sol-cta__subtitle">
+                    We specialize in building tailored software solutions that
+                    perfectly fit your unique business requirements.
                 </p>
-                <p class="about__text">
-                    From web applications to mobile apps and cloud
-                    infrastructure, we deliver comprehensive solutions that help
-                    you stay ahead in today's competitive digital landscape.
-                </p>
-            </div>
-        </section>
-        <section class="tech">
-            <div class="container">
-                <div class="tech__header">
-                    <h2 class="tech__title">Technologies We Use</h2>
-                    <p class="tech__subtitle">
-                        Leveraging the latest and most powerful technologies to
-                        build exceptional solutions
-                    </p>
-                </div>
-                <div class="tech__grid">
-                    <div class="tech__card">
-                        <img
-                            class="tech__card-icon"
-                            src="../images/react.svg"
-                            alt="React"
-                        />
-                        <span class="tech__card-name">React</span>
-                    </div>
-                    <div class="tech__card">
-                        <img
-                            class="tech__card-icon"
-                            src="../images/node.svg"
-                            alt="Node.js"
-                        />
-                        <span class="tech__card-name">Node.js</span>
-                    </div>
-                    <div class="tech__card">
-                        <img
-                            class="tech__card-icon"
-                            src="../images/python.svg"
-                            alt="Python"
-                        />
-                        <span class="tech__card-name">Python</span>
-                    </div>
-                    <div class="tech__card">
-                        <img
-                            class="tech__card-icon"
-                            src="../images/cloud.svg"
-                            alt="AWS"
-                        />
-                        <span class="tech__card-name">AWS</span>
-                    </div>
-                    <div class="tech__card">
-                        <img
-                            class="tech__card-icon"
-                            src="../images/phone.svg"
-                            alt="Mobile"
-                        />
-                        <span class="tech__card-name">Mobile</span>
-                    </div>
-                    <div class="tech__card">
-                        <img
-                            class="tech__card-icon"
-                            src="../images/database.svg"
-                            alt="Database"
-                        />
-                        <span class="tech__card-name">Database</span>
-                    </div>
-                </div>
-                <p class="tech__more">
-                    And many more: TypeScript, PostgreSQL, MongoDB, Docker,
-                    Kubernetes, GraphQL, Redis, and more...
-                </p>
-            </div>
-        </section>
-        <section class="reviews">
-            <div class="container">
-                <div class="reviews__header">
-                    <h2 class="reviews__title">What Our Clients Say</h2>
-                    <p class="reviews__subtitle">
-                        Don't just take our word for it – hear from our
-                        satisfied clients
-                    </p>
-                </div>
-                <div class="reviews__card" id="reviews-card">
-                    <div class="reviews__slide reviews__slide--active">
-                        <span class="reviews__quote-icon">"</span>
-                        <p class="reviews__text">
-                            "Heocode transformed our business with their
-                            analytics platform. The team was professional,
-                            responsive, and delivered beyond our expectations.
-                            Our data-driven decision making has improved
-                            dramatically."
-                        </p>
-                        <div class="reviews__author">
-                            <img
-                                class="reviews__author-photo"
-                                src="https://i.pravatar.cc/64?img=12"
-                                alt="Michael Chen"
-                            />
-                            <div class="reviews__author-info">
-                                <span class="reviews__author-name"
-                                    >Michael Chen</span
-                                >
-                                <span class="reviews__author-role"
-                                    >CEO, TechVision Inc</span
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="reviews__slide">
-                        <span class="reviews__quote-icon">"</span>
-                        <p class="reviews__text">
-                            "Working with Heocode was an absolute pleasure. They
-                            delivered our mobile app on time and on budget. The
-                            quality of the code and the attention to detail
-                            exceeded everything we had hoped for."
-                        </p>
-                        <div class="reviews__author">
-                            <img
-                                class="reviews__author-photo"
-                                src="https://i.pravatar.cc/64?img=47"
-                                alt="Sarah Johnson"
-                            />
-                            <div class="reviews__author-info">
-                                <span class="reviews__author-name"
-                                    >Sarah Johnson</span
-                                >
-                                <span class="reviews__author-role"
-                                    >CTO, DataFlow Systems</span
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="reviews__slide">
-                        <span class="reviews__quote-icon">"</span>
-                        <p class="reviews__text">
-                            "From the first meeting to launch day, the Heocode
-                            team was exceptional. They truly understood our
-                            vision and turned it into a scalable product that
-                            our users love. Highly recommend."
-                        </p>
-                        <div class="reviews__author">
-                            <img
-                                class="reviews__author-photo"
-                                src="https://i.pravatar.cc/64?img=33"
-                                alt="Alex Rodriguez"
-                            />
-                            <div class="reviews__author-info">
-                                <span class="reviews__author-name"
-                                    >Alex Rodriguez</span
-                                >
-                                <span class="reviews__author-role"
-                                    >Founder, StartupX</span
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="reviews__dots" id="reviews-dots">
-                    <button
-                        class="reviews__dot reviews__dot--active"
-                        aria-label="Slide 1"
-                    ></button>
-                    <button class="reviews__dot" aria-label="Slide 2"></button>
-                    <button class="reviews__dot" aria-label="Slide 3"></button>
-                </div>
-            </div>
-        </section>
-        <section class="cta">
-            <div class="container">
-                <h2 class="cta__title">Ready to Transform Your Business?</h2>
-                <p class="cta__subtitle">
-                    Let's discuss how we can help you build the perfect solution
-                    for your needs.
-                </p>
-                <a href="./contact.html" class="btn btn--white">
-                    Get in Touch
+                <button id="open-contact-modal" class="btn sol-cta__btn">
+                    Discuss Your Project
                     <img src="../images/arrow-right.svg" alt="" />
-                </a>
+                </button>
             </div>
         </section>
         <footer class="footer">
@@ -406,32 +432,16 @@
                             <h4 class="footer__nav-title">Quick Links</h4>
                             <ul class="footer__nav-list">
                                 <li>
-                                    <a
-                                        href="./index.html"
-                                        class="footer__nav-link"
-                                        >Home</a
-                                    >
+                                    <a href="../html/index.html" class="footer__nav-link">Home</a>
                                 </li>
                                 <li>
-                                    <a
-                                        href="./solutions.html"
-                                        class="footer__nav-link"
-                                        >Solutions</a
-                                    >
+                                    <a href="../html/solutions.html" class="footer__nav-link">Solutions</a>
                                 </li>
                                 <li>
-                                    <a
-                                        href="./projects.html"
-                                        class="footer__nav-link"
-                                        >Projects</a
-                                    >
+                                    <a href="../html/projects.html" class="footer__nav-link">Projects</a>
                                 </li>
                                 <li>
-                                    <a
-                                        href="./contact.html"
-                                        class="footer__nav-link"
-                                        >Contact</a
-                                    >
+                                    <a href="../html/contact.html" class="footer__nav-link">Contact</a>
                                 </li>
                             </ul>
                         </div>
